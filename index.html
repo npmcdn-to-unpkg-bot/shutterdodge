@@ -1,28 +1,81 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>FML</title>
+  <link rel="stylesheet" href="style.scss">
+</head>
 <body>
-
-  <p> Click the Button</p>
-
-  <button onclick="getLocation()">Try It</button>
-
-  <p id="demo"></p>
-
+    <nav>
+      <ul>
+        <li>style 1
+          <ul class="drop-menu menu-1">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>style 2
+          <ul class="drop-menu menu-2">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>style 3
+          <ul class="drop-menu menu-3">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li>style 4
+          <ul class="drop-menu menu-4">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <ul>
+        <ul class="titlepage">
+    <h1>We Will Rule The World</h1>
+    <p id="myWorld">How we will do it i dont know. We will do it thought.</p>
+    <button type="button" onclick="myButton()">Press Me</button>
+  </ul>
+</ul>
+<div class="penis">
+<form class="bull" action="index.html" method="post">
+  <li>Why does the world hate me?: </li>
+  <input type="text" name="first name">
+<br>
+<li>So is that it?</li>
+<input type="text" name="why">
+<br>
+</form>
+</div>
+  </body>
   <script>
-  var x = document.getElementById("demo");
-  function getLocation() {
-if (navigator.getLocation) {
-  navigator.getLocation.getCurrentPosition(showPosition);
-
-  } else {
-  x.innerHTML = "GeoLocation is not supported by this browser.";
+  function myButton() {
+    document.getElementById("myWorld").innerHTML = "Fuck Off";
   }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.Latitude +
-  "<br>Longitude: " +poistion.coords.Longitude;
-}
-</script>
-</body>
+  </script>
 </html>
