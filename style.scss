@@ -46,7 +46,7 @@ $green: #2ecc71;
   background-color: transparent;
 }
 .go {
-background-color: #e67e22;
+background-color: #2B293D;
 color: white;
 font-family: 'Roboto', sans-serif;
 font-size:16px;
@@ -54,10 +54,14 @@ padding:6px 0px;
 width: 5%;
 }
 .go:hover {
-background-color:#2B293D;
+background-color:#2ecc71;
+}
+.go:active {
+  position: relative;
+  top: 1px;
 }
 .navbar-search {
-  background-color: #333;
+  background-color: #CAD2C5;
   height: 50px;
   position: fixed;
   top: -50px;
@@ -85,13 +89,13 @@ background-color:#2B293D;
 
  /* On smaller screens, decrease text size */
  @media only screen and (max-width: 400px) {
-   .sitename {display: none;}
-   .logo {left: 10px;}
+   .sitename {left: 10px;}
+   .logo {display: none;}
    .jumbotron {height: 35vh;}
  }
 
 @media only screen and (max-width: 770px) {
   .navbar-btn {display: none;}
-  .navbar-search {top: 146px; background-color: #333; width: 110vw;}
-  .go {width: 20%;}
+  .navbar-search {top: 146px; background-color: #CAD2C5; width: 110vw;}
+  .go {width: 20%; position: relative; left: 39%;}
 }

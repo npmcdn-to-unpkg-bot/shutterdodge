@@ -31,6 +31,9 @@ var main = function() {
         top: "0px"
       }, 200);
     }
+    document.onkeydown = function(evt) {
+    console.log(evt.keyCode);
+    }
 });
 };
 $(document).ready(main);
