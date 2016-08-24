@@ -7,10 +7,11 @@ $gunmetal: #2B293D;
 $isabelline: #EBEBEB;
 $pastelgray: #CAD2C5;
 $green: #2ecc71;
+$orange: #e67e22;
 
 .bg {
   background: #CAD2C5;
-  margin-top: 50px;
+  top: 50px;
 }
 .collapse {
   color: red;
@@ -18,7 +19,7 @@ $green: #2ecc71;
 .logo {
   position: fixed;
   height: 50px;
-  left: 45vw;
+  left: 47vw;
 }
 .sitename {
   color: #e74c3c;
@@ -40,6 +41,80 @@ $green: #2ecc71;
      -moz-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
+}
+.leftbar {
+  position: fixed;
+  top: 30px;
+  width: 350;
+  left: -350px;
+  height: 93vh;
+  background-color: #CAD2C5;
+  border-radius: 3px;
+}
+.leftbar h1{
+  text-align: center;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: #e67e22;
+  background-color: #2B293D;
+  border-radius: 3px;
+}
+.innertext {
+  padding: 0 20;
+}
+.innertext h3{
+  padding: 5px;
+  margin: 0 43%;
+  text-align: center;
+  background-color: #EBEBEB;
+  border-radius: 20px;
+}
+.city{
+  background-color: #CAD2C5;
+  margin: 300px auto;
+  width: 300px;
+  height: 250px
+}
+.city h2{
+  text-align: center;
+  color: #e67e22;
+  background-color: #2B293D;
+  padding: 10px;
+}
+.innercity{
+  padding: 20px;
+}
+.innercity h4{
+  text-align: center;
+  padding: 5px;
+  margin: 0 40%;
+  background-color: #EBEBEB;
+  border-radius: 20px;
+}
+.innercity input[type=text] {
+    text-align: center;
+    background-color: transparent;
+    color: #2B293D;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px dashed #e74c3c;
+    border-radius: 4px;
+    font-size: 20px;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png');
+    background-size: 30px;
+    background-position: 10px 4px;
+    background-repeat: no-repeat;
+    padding: 4px 20px 4px 40px;
+}
+.innercity button[type=button] {
+  background-color: #2ecc71;
+  color: white;
+  margin: 5 40%;
+  padding: 10px;
+  border-radius: 20px;
 }
 .btn {
   margin-right: 20px;

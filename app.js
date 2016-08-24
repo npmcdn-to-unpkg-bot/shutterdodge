@@ -8,7 +8,7 @@ var main = function() {
         $('#searchbox').select()
 
         $('.bg').animate({
-            top: '50'
+            top: '50px'
         }, 200);
     });
 
@@ -21,6 +21,16 @@ var main = function() {
           top: "0px"
         }, 200);
     });
+
+    $('.citybtn').click(function() {
+        $('.leftbar').animate({
+            left: '0px'
+        }, 200);
+
+        $('.city').hide({
+        }, 200);
+    });
+
     $(document).keyup(function(e) {
      if (e.keyCode == 27) { // escape key maps to keycode `27`
       $('.navbar-search').animate({
