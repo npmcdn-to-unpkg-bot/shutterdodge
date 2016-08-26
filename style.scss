@@ -51,6 +51,7 @@ footer {
   height: 90vh;
   left: -2000px;
   background-color: #CAD2C5;
+  overflow:auto;
 }
 #leftbar h1{
   font-family: 'Roboto', sans-serif;
@@ -62,7 +63,7 @@ footer {
 .innertext {
   padding: 0 20px;
   height: 80vh;
-  overflow:auto;
+  // overflow:auto;
   text-align: center;
 }
 .innertext h3{
