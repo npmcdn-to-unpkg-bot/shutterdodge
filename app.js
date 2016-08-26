@@ -25,9 +25,16 @@ var main = function() {
         $('#map').animate({
             left: '0px'
         }, 600);
+
+
         $('.gallerybar').animate({
             left: '25px'
         }, 600);
+
+        $('.temp').animate({
+            top: '10px'
+        }, 600);
+
 
         $('.city').hide({
         }, 600);
