@@ -21,10 +21,13 @@ var main = function() {
     $('.citybtn').click(function() {
         $('#leftbar').animate({
             left: '0px'
-        }, 200);
+        }, 600);
+        $('#map').animate({
+            left: '0px'
+        }, 600);
 
         $('.city').hide({
-        }, 200);
+        }, 600);
     });
 
     $(document).keyup(function(e) {

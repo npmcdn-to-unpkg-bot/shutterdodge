@@ -15,6 +15,7 @@ $orange: #e67e22;
   position: fixed;
   height: 50px;
   left: 47vw;
+
 }
 .sitename {
   color: #e74c3c;
@@ -40,14 +41,21 @@ footer {
   height: 4vh;
   background-color: #e67e22;
 }
+footer a{
+  ///////////////////////////// HERE plz
+}
+footer img{
+  height: 3vh;
+}
 #map {
   height: 90vh;
   width: 100%;
+  left: -2000px;
   z-index: auto;
 }
 #leftbar {
   height: 90vh;
-  left: -350px;
+  left: -2000px;
   background-color: #CAD2C5;
 }
 #leftbar h1{
@@ -58,7 +66,7 @@ footer {
   padding: 10px;
 }
 .innertext {
-  padding: 0 20;
+  padding: 0 20px;
   height: 80vh;
   overflow:auto;
   text-align: center;
@@ -107,7 +115,8 @@ footer {
   text-align: center;
   color: #e67e22;
   background-color: #2B293D;
-  padding: 10px;
+  padding: 0 10 5 10;
+  margin: 10 0 0 0;
   font-family: 'Roboto', sans-serif;
 }
 .innercity{
@@ -115,7 +124,9 @@ footer {
 }
 .innercity h4{
   text-align: center;
-  margin: 0 40%;
+  font-size: 40px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 .innercity input[type=text] {
     text-align: center;
@@ -220,8 +231,9 @@ background-color:#2ecc71;
  // }
 @media only screen and (max-width: 590px)  {
   #map{display: none;}
-  .city{margin: 50 auto; width: 100%; z-index: auto;}
-
+  .city{margin: 50 auto; width: 100%; z-index: auto; top: 20%;}
+  .innertext {overflow: visible;}
+  #leftbar {height: auto;}
   .sitename {left: 10px;}
   .logo {display: none;}
   .jumbotron {height: 35vh;}
@@ -230,6 +242,7 @@ background-color:#2ecc71;
   .navbar-btn {display: none;}
   .navbar-search {top: 146px; background-color: #CAD2C5; width: 110vw;}
   .go {width: 20%; position: relative; left: 39%;}
+  #map{display: none;}
 }
 // @media only screen and (max-width: 860px) {
 //   .leftbar h1{font-size: 20px;}
