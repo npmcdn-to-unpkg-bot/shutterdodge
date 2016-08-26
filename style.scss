@@ -9,12 +9,7 @@ $pastelgray: #CAD2C5;
 $green: #2ecc71;
 $orange: #e67e22;
 
-.bg {
-  background: #CAD2C5;
-  top: 50px;
-}
-.collapse {
-  color: red;
+.container-fluid {
 }
 .logo {
   position: fixed;
@@ -34,33 +29,39 @@ $orange: #e67e22;
 .sitename mark{
   color: #e67e22;
 }
-.jumbotron {
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png');
-  height: 50vh;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
+.row {
+  margin-top: 50px;
+  background-color: #2B293D;
 }
-.leftbar {
-  position: fixed;
-  top: 30px;
-  width: 350;
+.collapse {
+  color: red;
+}
+footer {
+  height: 4vh;
+  background-color: #e67e22;
+}
+#map {
+  height: 90vh;
+  width: 100%;
+  z-index: auto;
+}
+#leftbar {
+  height: 90vh;
   left: -350px;
-  height: 93vh;
   background-color: #CAD2C5;
-  border-radius: 3px;
 }
-.leftbar h1{
-  text-align: center;
-  padding: 10px;
+#leftbar h1{
   font-family: 'Roboto', sans-serif;
+  text-align: center;
   color: #e67e22;
   background-color: #2B293D;
-  border-radius: 3px;
+  padding: 10px;
 }
 .innertext {
   padding: 0 20;
+  height: 80vh;
+  overflow:auto;
+  text-align: center;
 }
 .innertext h3{
   padding: 5px;
@@ -69,27 +70,52 @@ $orange: #e67e22;
   background-color: #EBEBEB;
   border-radius: 20px;
 }
+// .gallerybar {
+//   top: 30px;
+//   background-color: #CAD2C5;
+//   position: fixed;
+//   margin: 300px auto;
+//   width: 300px;
+//   height: 250px;
+//   left: 375px;
+//   border-radius: 3px;
+// }
+// .gallerybar h3{
+//   text-align: center;
+//   padding: 10px;
+//   font-family: 'Roboto', sans-serif;
+//   color: #e67e22;
+//   background-color: #2B293D;
+// }
 .city{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+
   background-color: #CAD2C5;
-  margin: 300px auto;
   width: 300px;
-  height: 250px
+  height: 250px;
+  box-shadow: 0px 10px 30px;
+  border-radius: 3px;
+
+  z-index: 10;
 }
 .city h2{
   text-align: center;
   color: #e67e22;
   background-color: #2B293D;
   padding: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 .innercity{
   padding: 20px;
 }
 .innercity h4{
   text-align: center;
-  padding: 5px;
   margin: 0 40%;
-  background-color: #EBEBEB;
-  border-radius: 20px;
 }
 .innercity input[type=text] {
     text-align: center;
@@ -110,18 +136,41 @@ $orange: #e67e22;
     padding: 4px 20px 4px 40px;
 }
 .innercity button[type=button] {
-  background-color: #2ecc71;
+  background-color: #e67e22;
+  // color: white;
+  // margin: 5 40%;
+  // padding: 10px;
+  // border-radius: 20px;
+  align-items: center;
+  border: 0;
+  border-radius: 3px;
   color: white;
-  margin: 5 40%;
-  padding: 10px;
-  border-radius: 20px;
+  display: flex;
+
+  margin-left: auto;
+  font-family: $font;
+  font-size: 12px;
+  font-weight: 500;
+  justify-content: center;
+
+  outline: none;
+  padding: 10px 9px 10px 11px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.innercity button[type=button]:hover {
+    // background-color: #2ecc71;
+    transform: scale(1.02);
+}
+.innercity button[type=button]:active {
+  transform: scale(.99);
 }
 .btn {
   margin-right: 20px;
   background-color: transparent;
 }
 .go {
-background-color: #2B293D;
+background-color: #e67e22;
 color: white;
 font-family: 'Roboto', sans-serif;
 font-size:16px;
@@ -162,15 +211,27 @@ background-color:#2ecc71;
     padding: 4px 20px 4px 40px;
 }
 
- /* On smaller screens, decrease text size */
- @media only screen and (max-width: 400px) {
-   .sitename {left: 10px;}
-   .logo {display: none;}
-   .jumbotron {height: 35vh;}
- }
 
-@media only screen and (max-width: 770px) {
+ /* On smaller screens, decrease text size */
+ // @media only screen and (max-width: 400px) {
+ //   .sitename {left: 10px;}
+ //   .logo {display: none;}
+ //   .jumbotron {height: 35vh;}
+ // }
+@media only screen and (max-width: 590px)  {
+  #map{display: none;}
+  .city{margin: 50 auto; width: 100%; z-index: auto;}
+
+  .sitename {left: 10px;}
+  .logo {display: none;}
+  .jumbotron {height: 35vh;}
+}
+@media only screen and (max-width: 765px) {
   .navbar-btn {display: none;}
   .navbar-search {top: 146px; background-color: #CAD2C5; width: 110vw;}
   .go {width: 20%; position: relative; left: 39%;}
 }
+// @media only screen and (max-width: 860px) {
+//   .leftbar h1{font-size: 20px;}
+//   .leftbar {width: 30vw;}
+// }

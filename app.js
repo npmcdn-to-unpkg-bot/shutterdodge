@@ -6,10 +6,6 @@ var main = function() {
 
         $('#searchbox').focus()
         $('#searchbox').select()
-
-        $('.bg').animate({
-            top: '50px'
-        }, 200);
     });
 
     $('.go').click(function() {
@@ -23,7 +19,7 @@ var main = function() {
     });
 
     $('.citybtn').click(function() {
-        $('.leftbar').animate({
+        $('#leftbar').animate({
             left: '0px'
         }, 200);
 
@@ -40,9 +36,6 @@ var main = function() {
       $('.bg').animate({
         top: "0px"
       }, 200);
-    }
-    document.onkeydown = function(evt) {
-    console.log(evt.keyCode);
     }
 });
 };

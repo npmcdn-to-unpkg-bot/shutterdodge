@@ -25,7 +25,7 @@
           </button>
           <span class="icon-bar"></span>
           <a class="navbar-brand" href="#"><span class="sitename"><small>spots</small>2Snap</span></a>
-          <a href="#"><img class="logo" src="assets\images\SVLogoPhoneBG.png" /></a>
+          <a href="#"><img class="logo" src="assets\images\SVLogoFlat.png" /></a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,57 +45,72 @@
     </nav>
   </div>
 </header>
-
-
 <!-- <div id="search"></div> -->
-<div class="bg">
-  <!-- <div class="jumbotron">
-  </div> -->
-  <div class="leftbar">
-    <h1> Locations </h1>
-    <div class="innertext">
-      <h3>1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class=".col-xs-8 col-sm-4 col-md-4 col-lg-2" id="leftbar">
+      <!--Sidebar content-->
+      <h1> Locations </h1>
+      <div class="innertext">
+        <h3>1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h3>2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h3>3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h3>4</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h3>5</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h3>6</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h3>7</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h3>8</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      </div>
     </div>
-  </div>
-
-  <div class="city">
-    <h2>Where do you want to go hiking?</h2>
-    <div class="innercity">
-      <h4>city?</h4>
-      <input type="text" name="city" id="citybox" placeholder="Los Angeles.." style="outline: none">
-      <br>
-      <button type="button" class="citybtn" name="button" style="outline: none">GO!</button>
-    </div>
-  </div>
-
-
-  <!-- <div class="container">
-    <div class="row">
-        <div class="col-sm-8 col-xs-12">
-            <div class="thumbnail">
-                <img src="" alt="">
-                <div class="caption">
-                    <h4>Lmao</h4>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-danger" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                </div>
-            </div>
-          </div>
-        <div class="col-sm-4 col-xs-12">
-            <div class="thumbnail">
-                <img src="" alt="">
-                <div class="caption">
-                    <h4>Lmao</h4>
-                    <p>...</p>
-                    <p><a href="#" class="btn btn-danger" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                </div>
-            </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-10">
+      <!--Body content-->
+      <div class="city">
+        <h2>Where do you want to go hiking?</h2>
+        <div class="innercity">
+          <h4>city?</h4>
+          <input type="text" name="city" id="citybox" placeholder="Los Angeles.." style="outline: none">
+          <br>
+          <!-- <button type="button" class="citybtn" name="button" style="outline: none">GO!</button> -->
+          <button type="button" class="citybtn">Take Me! <i className="fa fa-fw fa-chevron-right"></i></button>
         </div>
+      </div>
+      <div id="map"></div>
     </div>
-  </div> -->
+  </div>
 </div>
+<footer>
 
+</footer>
+
+
+  <!-- <div class="gallerybar">
+    <h3> Location Gallery </h3>
+  </div> -->
+
+
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaWaPf1sTwxYmI-_pi_55oGz29tsqnduU"></script>
+ <script>
+   var map = new google.maps.Map(document.getElementById('map'), {
+     center: {lat: -34.397, lng: 150.644},
+     zoom: 8
+   });
+ </script>
 <script src="app.js"></script>
 
 </body>
