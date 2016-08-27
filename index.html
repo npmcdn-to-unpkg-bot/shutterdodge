@@ -88,7 +88,7 @@
 
       </div>
     </div>
-    <div class="col-xs-8 col-sm-7 col-md-8 col-lg-9">
+    <div class="col-xs-8 col-sm-7 col-md-8 col-lg-9" id="body">
       <!--Body content-->
       <div class="city">
         <h2>Where do you want to go hiking?</h2>
@@ -101,8 +101,17 @@
         </div>
       </div>
 
+      <button type="button" class="galbtn" name="button" style="outline: none">Gallery!</button>
+      <button type="button" class="weabtn" name="button" style="outline: none">Weather!</button>
+      <button type="button" class="locbtn" name="button" style="outline: none">New location!</button>
+
       <div class="gallerybar">
         <h3> Location Gallery </h3>
+        <div class="container-fluid" id="gallery">
+          <a href="#"><img  src="http://i282.photobucket.com/albums/kk269/debdeb111/Violet%20Hour/RANDOM21.jpg" / alt="Location Pic"></a>
+          <a href="#"><img  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Rossville_Boardwalk_Wolf_River.jpg" / alt="Location Pic"></a>
+          <a href="#"><img  src="https://static.pexels.com/photos/2773/city-skyline-skyscrapers-top.jpg" / alt="Location Pic"></a>
+        </div>
       </div>
       <div class="temp">
         <h3>Weather</h3>
@@ -126,7 +135,7 @@
  <script>
    var map = new google.maps.Map(document.getElementById('map'), {
      center: {lat: 34.0522, lng: -118.2437},
-     zoom: 8
+     zoom: 10
    });
  </script>
 <script src="app.js"></script>

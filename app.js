@@ -25,10 +25,10 @@ var main = function() {
         $('#map').animate({
             left: '0px'
         }, 600);
-
-
         $('.gallerybar').animate({
             left: '25px'
+        }, 600);
+        $('.gallerybar').hide({
         }, 600);
 
         $('.temp').animate({
@@ -38,6 +38,10 @@ var main = function() {
 
         $('.city').hide({
         }, 600);
+    });
+
+    $(".galbtn").click(function(){
+        $(".gallerybar").toggle();
     });
 
     $(document).keyup(function(e) {
