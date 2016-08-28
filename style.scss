@@ -116,9 +116,8 @@ footer a{
 #gallery {
   padding-top: 18px;
 }
-#body button:hover {
+.buttons button:hover {
   background-color: orange;
-
 }
 .locbtn{
   position: absolute;
@@ -164,12 +163,19 @@ footer a{
 }
 .morbtn{
   position: absolute;
-  bottom: 10px;
-  left: 400px;
+  bottom: -5px;
+  left: -2000px;
+  padding: 10px 15px;
   background-color:  #2ecc71;
   border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  display: none;
 
   z-index: 13;
+}
+.morbtn:hover{
+  background-color: orange;
 }
 .temp{
   display: none;

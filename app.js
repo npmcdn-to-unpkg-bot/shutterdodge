@@ -25,7 +25,7 @@ var main = function() {
         $('#map').animate({
             left: '0px'
         }, 600);
-        $('#body button').animate({
+        $('.buttons button').animate({
             left: '15px'
         }, 600);
 
@@ -45,9 +45,14 @@ var main = function() {
     });
     $(".galbtn").click(function(){
         $(".gallerybar").toggle();
+        $(".morbtn").toggle();
         $('.gallerybar').animate({
             left: '25px'
         }, 800);
+        $('.morbtn').animate({
+            left: '152px'
+        }, 700);
+
     });
 
     $(document).keyup(function(e) {
