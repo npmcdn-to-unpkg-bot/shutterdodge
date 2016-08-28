@@ -25,23 +25,29 @@ var main = function() {
         $('#map').animate({
             left: '0px'
         }, 600);
-        $('.gallerybar').animate({
-            left: '25px'
+        $('#body button').animate({
+            left: '15px'
         }, 600);
-        $('.gallerybar').hide({
-        }, 600);
-
-        $('.temp').animate({
-            top: '10px'
-        }, 600);
-
 
         $('.city').hide({
         }, 600);
     });
 
+    $(".locbtn").click(function(){
+
+        $(".city").toggle();
+    });
+    $(".weabtn").click(function(){
+        $('.temp').animate({
+          top: '10px'
+        }, 200);
+        $(".temp").toggle();
+    });
     $(".galbtn").click(function(){
         $(".gallerybar").toggle();
+        $('.gallerybar').animate({
+            left: '25px'
+        }, 800);
     });
 
     $(document).keyup(function(e) {
