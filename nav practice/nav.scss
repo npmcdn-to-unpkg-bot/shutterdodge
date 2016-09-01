@@ -1,64 +1,96 @@
-@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
 @import 'https://fonts.googleapis.com/css?family=Roboto';
 
 
-$red: #e74c3c;
-$gunmetal: #2B293D;
-$isabelline: #EBEBEB;
-$pastelgray: #CAD2C5;
-$green: #2ecc71;
-$orange: #e67e22;
 
-.container-fluid {
+.nav {
+  // display: none;
+  position: fixed;
+  background-color: #2ecc71;
+  height: 63px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 30;
+  line-height: 30px;
 }
 .logo {
+  height: 60px;
 }
-.sitename {
-  color: #e74c3c;
-  font-style: normal;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+.nav-right{
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 }
-.sitename small{
-  color: #e67e22;
+.navbar-search {
+  background-color: #CAD2C5;
+  height: 50px;
+  position: fixed;
+  top: -50px;
+  left: 0px;
+  right: 0px;
+  z-index: 20;
 }
-.sitename mark{
-  color: #e67e22;
+.navbar-search input[type=text] {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 40px;
+    width: 94%;
+    box-sizing: border-box;
+    border: 0px groove #333;
+    border-radius: 4px;
+    font-size: 20px;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png');
+    background-size: 30px;
+    background-position: 10px 4px;
+    background-repeat: no-repeat;
+    padding: 4px 20px 4px 40px;
 }
-.row {
-  margin-top: 50px;
-  background-color: #2B293D;
+.btn {
+  margin-right: 20px;
+  color: white;
+  background-color: transparent;
 }
-.collapse {
-  color: red;
+.go {
+background-color: #2ecc71;
+color: white;
+font-family: 'Roboto', sans-serif;
+font-size:16px;
+padding:6px 0px;
+width: 5%;
+border: 0;
 }
+.go:hover {
+background-color: orange;
+color: #2B293D;
+}
+.go:active {
+  position: relative;
+  top: 1px;
+}
+//body=========================================================================
+
 footer {
   height: 4vh;
-  background-color: #e67e22;
 }
 .social-media{
-  position: absolute;
-  width: 100%;
-  left: 0;
-  text-align: center;
-  margin: 3px auto;
+  float: right;
+  margin: 0 auto;
 }
-.social-media img{
-  height: 30px;
-  opacity: .8;
-}
-.social-media img:hover{
-  opacity: 1;
+#main {
+  background-color: #2B293D;
 }
 #map {
-  height: 90vh;
+  height: 93vh;
   width: 100%;
   left: -2000px;
   z-index: auto;
 }
 #leftbar {
-  height: 90vh;
+  height: 93vh;
   left: -2000px;
   background-color: #CAD2C5;
   overflow:auto;
@@ -115,9 +147,6 @@ footer {
   height: 100px;
   border: 3px solid white;
 }
-//  a:hover{
-//   filter: blur(100px);
-// }
 #gallery {
   padding-top: 18px;
 }
@@ -293,71 +322,12 @@ footer {
 .innercity button[type=button]:active {
   transform: scale(.99);
 }
-.btn {
-  margin-right: 20px;
-  background-color: transparent;
-}
-.go {
-background-color: #2ecc71;
-color: white;
-font-family: 'Roboto', sans-serif;
-font-size:16px;
-padding:6px 0px;
-width: 5%;
-border: 0;
-}
-.go:hover {
-background-color: orange;
-}
-.go:active {
-  position: relative;
-  top: 1px;
-}
-.navbar-search {
-  background-color: #CAD2C5;
-  height: 50px;
-  position: fixed;
-  top: -50px;
-  left: 0px;
-  right: 0px;
-}
-.navbar-search input[type=text] {
-    text-align: center;
-    background-color: transparent;
-    color: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 40px;
-    width: 94%;
-    box-sizing: border-box;
-    border: 0px groove #333;
-    border-radius: 4px;
-    font-size: 20px;
-    background-image: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-128.png');
-    background-size: 30px;
-    background-position: 10px 4px;
-    background-repeat: no-repeat;
-    padding: 4px 20px 4px 40px;
-}
 
 
 
-@media only screen and (max-width: 590px)  {
-  .city{margin: 50 auto; width: 100%; z-index: auto; top: 20%;}
-  .innertext {overflow: visible;}
-  #leftbar {height: auto;}
-  .sitename {left: 10px;}
-  .logo {display: none;}
-}
-@media only screen and (max-width: 765px) {
-  .navbar-btn {display: none;}
-  .navbar-search {top: 146px; background-color: #CAD2C5; width: 110vw;}
-  .go {width: 20%; position: relative; left: 39%;}
-  #map{display: none;}
-  .gallerybar {display: none;}
-  .temp{display: none;}
-}
-// @media only screen and (max-width: 860px) {
-//   .leftbar h1{font-size: 20px;}
-//   .leftbar {width: 30vw;}
-// }
+$red: #e74c3c;
+$gunmetal: #2B293D;
+$isabelline: #EBEBEB;
+$pastelgray: #CAD2C5;
+$green: #2ecc71;
+$orange: #e67e22;
