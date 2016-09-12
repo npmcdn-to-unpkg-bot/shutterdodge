@@ -64,7 +64,7 @@ var main = function() {
       $('.bg').animate({
         top: "0px"
       }, 200);
-    }
-});
+      }
+    });
 };
 $(document).ready(main);
